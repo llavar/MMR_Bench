@@ -1,4 +1,5 @@
-# TRINS: Towards Multimodal Language Models that Can Read
+# Evaluating Reading Ability of Large Multimodal Models
+The evaluation code for the MMR: Multi-Modal Reading Benchmark.
 
 ## Image Data 
 Image will be available on huggingface [`puar-playground/MMR`](https://huggingface.co/datasets/puar-playground/MMR) soon.
