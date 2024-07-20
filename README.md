@@ -1,8 +1,9 @@
 # Evaluating Reading Ability of Large Multimodal Models
 The evaluation code for the MMR: Multi-Modal Reading Benchmark.
+![image](demo.png)
 
 ## Image Data 
-Image will be available on huggingface [`puar-playground/MMR`](https://huggingface.co/datasets/puar-playground/MMR) soon.
+Image will be available on [`huggingface`](https://huggingface.co/datasets/puar-playground/MMR) soon.
 
 ## Installation
 Create a conda venv
