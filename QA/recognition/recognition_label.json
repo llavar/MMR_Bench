@@ -1,0 +1,542 @@
+[
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50738805tn07121ybgkfv7",
+        "image_path": "MMR/images/clo50738805tn07121ybgkfv7.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"TREVETHLAN",
+        "type": "ocr",
+        "url": "https://www.litres.ru/static/bookimages/40/62/83/40628316.bin.dir/40628316.cover.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly041207121hibb970",
+        "image_path": "MMR/images/clo5072ly041207121hibb970.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"Foreword by Oprah Winfrey\"",
+        "type": "ocr",
+        "url": "https://media.karousell.com/media/photos/products/2020/9/1/brand_new_i_know_why_the_caged_1598930528_21cf6d07_progressive.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly041w07127oal78sw",
+        "image_path": "MMR/images/clo5072ly041w07127oal78sw.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"Margaret Owen\"",
+        "type": "ocr",
+        "url": "https://cdn.shopify.com/s/files/1/0078/1906/7459/products/91XndelAjtL_1_530x@2x.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605a0071281t0c4bd",
+        "image_path": "MMR/images/clo50733605a0071281t0c4bd.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"CES FRANKS\"",
+        "type": "ocr",
+        "url": "https://www.rarenonfiction.com/assets/images/product/341h3118.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072tz04oh0712mmzgnh71",
+        "image_path": "MMR/images/clo5072tz04oh0712mmzgnh71.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"TAMARA LEIGH\"",
+        "type": "ocr",
+        "url": "http://www.elizabethnewsom.com/wp-content/uploads/2016/08/Book-Review-Baron-of-Blackwood.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605750712je98s078",
+        "image_path": "MMR/images/clo50733605750712je98s078.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"George Butler\"",
+        "type": "ocr",
+        "url": "https://cdn.webshopapp.com/shops/248498/files/362080810/drawn-across-borders-true-stories-of-migration-aut.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03z60712xfpd4idx",
+        "image_path": "MMR/images/clo5072ac03z60712xfpd4idx.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"KIRK WALLACE JOHNSON\"",
+        "type": "ocr",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/c/c/cc8y/cc8y-square-orig.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605ch0712e1edf7ze",
+        "image_path": "MMR/images/clo50733605ch0712e1edf7ze.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"K\u00c1LM\u00c1N KITTENBERGER\"",
+        "type": "ocr",
+        "url": "http://m.blog.hu/ne/nemzetikonyvtar/image/581b59df-72ef-4027-b2cb-d07ad48a99d4.jpeg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly049r07125gx3w6vc",
+        "image_path": "MMR/images/clo5072ly049r07125gx3w6vc.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"MEGAN ROSE GEDRIS\"",
+        "type": "ocr",
+        "url": "https://cdn.shopify.com/s/files/1/0308/1889/3961/products/d6e258afb1b8f2014bdeda6e9282e768_1200x.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50738805rd0712w9tifq2r",
+        "image_path": "MMR/images/clo50738805rd0712w9tifq2r.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"PAUL DICKSON\"",
+        "type": "ocr",
+        "url": "https://cdn.shoplightspeed.com/shops/635287/files/32710210/1600x2048x2/books-the-rise-of-g-i-army-the-forgotten-story-of.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj052u0712y3clz5ha",
+        "image_path": "MMR/images/clo5072yj052u0712y3clz5ha.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"ANN SPANGLER LOIS TVERBERG\"",
+        "type": "ocr",
+        "url": "https://cdn.shopify.com/s/files/1/0004/6946/7193/products/91oaV2gQbiL_530x@2x.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605ba07120t7rxao4",
+        "image_path": "MMR/images/clo50733605ba07120t7rxao4.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"A touch-and-feel book\"",
+        "type": "ocr",
+        "url": "https://clipground.com/images/goldilocks-three-bears-clipart-1.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03ql0712mv9d47g4",
+        "image_path": "MMR/images/clo5072ac03ql0712mv9d47g4.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"NICK ADAMS\"",
+        "type": "ocr",
+        "url": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781682614747/the-case-against-the-establishment-9781682614747_hr.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo507336059b0712attr1bgx",
+        "image_path": "MMR/images/clo507336059b0712attr1bgx.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"ROSEMARY DRYSDALE\"",
+        "type": "ocr",
+        "url": "https://m.media-amazon.com/images/I/A1jtP65ufWL._UL1159_.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072tz04l60712eg9lecno",
+        "image_path": "MMR/images/clo5072tz04l60712eg9lecno.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"MAGGIE MCGINNIS\"",
+        "type": "ocr",
+        "url": "https://3.bp.blogspot.com/-v6yBVFVoEGc/UkBt39PYlmI/AAAAAAAAIWk/E8_Uw8BofT4/s1600/Cover.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj04ux0712fx7pht84",
+        "image_path": "MMR/images/clo5072yj04ux0712fx7pht84.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"ICONIC CARS AND STORIES FROM THE MEN WHO LOVE THEM\"",
+        "type": "ocr",
+        "url": "https://cdn.shopify.com/s/files/1/0257/9804/9838/products/9781579658922_3D_530x@2x.png"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03ri0712jvc47y5m",
+        "image_path": "MMR/images/clo5072ac03ri0712jvc47y5m.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"Bernd Krauskopf Hinke M. Osinga Jorge Gal\u00e1n-Vioque\"",
+        "type": "ocr",
+        "url": "https://imagizer.imageshack.com/a/img922/6251/c2HQi3.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj04ur0712rcrc6kcg",
+        "image_path": "MMR/images/clo5072yj04ur0712rcrc6kcg.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"Ken Done\"",
+        "type": "ocr",
+        "url": "https://cdn.shoplightspeed.com/shops/642491/files/29947506/1652x1652x2/books-stationery-book-ken-done-paintings-you-proba.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605c40712u28my3le",
+        "image_path": "MMR/images/clo50733605c40712u28my3le.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"IMAGINATION HAS NO LIMITS ... USE YOURS TO CREATE A STORY OR POEM FOR LITRASAURUS\"",
+        "type": "ocr",
+        "url": "https://www.litrasaurus.com/img/content/christopher-1-plus-words.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly04bx07122rlk7dn9",
+        "image_path": "MMR/images/clo5072ly04bx07122rlk7dn9.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"Passover Seder\"",
+        "type": "ocr",
+        "url": "https://images.saymedia-content.com/.image/t_share/MTc2MjYyMTM4NjI1NTk4NjU0/passover-seder.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj054q0712kbjk5xld",
+        "image_path": "MMR/images/clo5072yj054q0712kbjk5xld.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"BRIAN HERBERT AND KEVIN J. ANDERSON\"",
+        "type": "ocr",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/b/8/b8od/b8od-square-1536.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605hg0712yt1iz10d",
+        "image_path": "MMR/images/clo50733605hg0712yt1iz10d.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"Jacqueline Susann\"",
+        "type": "ocr",
+        "url": "http://pictures.abebooks.com/JSREALACORPNET/16268472706.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj051a0712tffgfdak",
+        "image_path": "MMR/images/clo5072yj051a0712tffgfdak.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"A MEMOIR OF RECOVERY BY JORDAN P. BARNES\"",
+        "type": "ocr",
+        "url": "https://images.gr-assets.com/books/1593220864l/54030707.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj051v0712qm8ph918",
+        "image_path": "MMR/images/clo5072yj051v0712qm8ph918.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"THE MARFA TAPES\"",
+        "type": "ocr",
+        "url": "https://cdn.shopify.com/s/files/1/0432/4033/products/1_8d2bd018-0f29-4901-9759-affaf8666c0c_1024x1024@2x.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly041g0712uzrwsuop",
+        "image_path": "MMR/images/clo5072ly041g0712uzrwsuop.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"A BOSTON LOVE NOVEL\"",
+        "type": "ocr",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/911nQ-M1DXL.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605gk0712plxdxbul",
+        "image_path": "MMR/images/clo50733605gk0712plxdxbul.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"URSULA M SCHAFFER\"",
+        "type": "ocr",
+        "url": "https://img0.etsystatic.com/000/0/5548798/il_fullxfull.336438762.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo507336059h0712u5rwtlkr",
+        "image_path": "MMR/images/clo507336059h0712u5rwtlkr.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"ANTHONY DOERR\"",
+        "type": "ocr",
+        "url": "https://glitterinc.com/wp-content/uploads/2019/05/All-the-Light-We-Cannot-See-by-Anthony-Doerr-.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj04xj0712c6n8zfzv",
+        "image_path": "MMR/images/clo5072yj04xj0712c6n8zfzv.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"Roger Emerson\"",
+        "type": "ocr",
+        "url": "https://media.musiciansfriend.com/is/image/MMGS7/Swing-Low-ShowTrax-CD-Arranged-by-Roger-Emerson/K14802000000000-00-1600x1600.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly04460712j1dk6tfl",
+        "image_path": "MMR/images/clo5072ly04460712j1dk6tfl.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"Death as a Theme of Initiation",
+        "type": "ocr",
+        "url": "https://cdn.openpublishing.com/grin-paper/16797_0.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50738805t70712vsrym7hq",
+        "image_path": "MMR/images/clo50738805t70712vsrym7hq.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"One-Page Reference Sheets for the 66 Books of the Bible.\"",
+        "type": "ocr",
+        "url": "https://married2kdk.files.wordpress.com/2018/10/screenshot_20181001-223916_samsung-internet1.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072tz04lt071242eltrmj",
+        "image_path": "MMR/images/clo5072tz04lt071242eltrmj.jpg",
+        "question": "What is the author name in the image?",
+        "answers": "\"CLIFF JACOBSON\"",
+        "type": "ocr",
+        "url": "https://cdn.shopify.com/s/files/1/0253/3343/products/Basic_Illustrated_Canoeing_spo_1024x1024.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj053b0712aegs255t",
+        "image_path": "MMR/images/clo5072yj053b0712aegs255t.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"100 BLUEPRINT BRUSHES\"",
+        "type": "ocr",
+        "url": "https://cdn.shopify.com/s/files/1/0252/0412/9878/products/BlueprintBrushes.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj04wp07122voypunf",
+        "image_path": "MMR/images/clo5072yj04wp07122voypunf.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"The Story of the Woman Who Helped to Hide the Frank Family\"",
+        "type": "ocr",
+        "url": "https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781416598855_9781416598855_hr.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03yz0712xb93hdgr",
+        "image_path": "MMR/images/clo5072ac03yz0712xb93hdgr.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"THE WEST KINGDOM TOMESAGA\"",
+        "type": "ocr",
+        "url": "https://cdn.webshopapp.com/shops/287156/files/366773180/1600x2048x1/renegade-games-architects-of-the-west-kingdom-tome.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03v20712jc1c915d",
+        "image_path": "MMR/images/clo5072ac03v20712jc1c915d.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"Find Where You Belong.\"",
+        "type": "ocr",
+        "url": "https://cclsmultimedia.files.wordpress.com/2021/04/news-of-the-world.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072tz04qr0712j2tpltrp",
+        "image_path": "MMR/images/clo5072tz04qr0712j2tpltrp.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"Barabas character in his opening speech\"",
+        "type": "ocr",
+        "url": "https://cdn.openpublishing.com/grin-paper/268380_0.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50738805sr07122m9190o9",
+        "image_path": "MMR/images/clo50738805sr07122m9190o9.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"NARRATED BY CELESTE CIULLA\"",
+        "type": "ocr",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/b/b/bbza/bbza-square-1536.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly043u07125lmybn12",
+        "image_path": "MMR/images/clo5072ly043u07125lmybn12.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"AN INTIMATE HISTORY\"",
+        "type": "ocr",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81A1EfypEZL.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072tz04r607126k0zcls3",
+        "image_path": "MMR/images/clo5072tz04r607126k0zcls3.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"Day of Discovery\"",
+        "type": "ocr",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81H0oNyYr3L._AC_SL1500_.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo507336059x0712a09nuq12",
+        "image_path": "MMR/images/clo507336059x0712a09nuq12.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"BOOK OF THE YEAR",
+        "type": "ocr",
+        "url": "https://cdn2.penguin.com.au/covers/original/9781864715262.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072tz04il0712547roa3g",
+        "image_path": "MMR/images/clo5072tz04il0712547roa3g.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"THE GREAT GILLY HOPKINS\"",
+        "type": "ocr",
+        "url": "https://static.wixstatic.com/media/21edac_1f0a25b6a40346f59e99868f7f46350a.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072tz04gh07127i2h9eyn",
+        "image_path": "MMR/images/clo5072tz04gh07127i2h9eyn.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"a novel\"",
+        "type": "ocr",
+        "url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1572879113i/43925876._UY2771_SS2771_.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03mq0712uxd8l14u",
+        "image_path": "MMR/images/clo5072ac03mq0712uxd8l14u.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"THE WATCHER EP\"",
+        "type": "ocr",
+        "url": "https://gfx2.decks.de/decks/gfx/co_raw/front/end_o/cg5-8o.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50738805px07121on2s0kx",
+        "image_path": "MMR/images/clo50738805px07121on2s0kx.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"the white seal\"",
+        "type": "ocr",
+        "url": "https://p1.liveauctioneers.com/6024/124844/63518184_1_x.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03xb0712cr8hriaa",
+        "image_path": "MMR/images/clo5072ac03xb0712cr8hriaa.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"ROYAL FLEET AUXILIARY IN FOCUS\"",
+        "type": "ocr",
+        "url": "https://www.deesidebooks.com/assets/images/product/005882.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072tz04kx0712y6is05rv",
+        "image_path": "MMR/images/clo5072tz04kx0712y6is05rv.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"a novel\"",
+        "type": "ocr",
+        "url": "https://i.gr-assets.com/images/S/photo.goodreads.com/books/1439560059i/26093614.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605ge07120h63msk8",
+        "image_path": "MMR/images/clo50733605ge07120h63msk8.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"Spirit of the Incas\"",
+        "type": "ocr",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81yObRgGbQL.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605j50712x4lpb7ji",
+        "image_path": "MMR/images/clo50733605j50712x4lpb7ji.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"FACTS AND FICTIONS OF LIFE\"",
+        "type": "ocr",
+        "url": "https://cv7.litres.ru/pub/c/cover/24858371.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly044k0712utt4sju4",
+        "image_path": "MMR/images/clo5072ly044k0712utt4sju4.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"Psychopharmacological Issues in Geriatrics\"",
+        "type": "ocr",
+        "url": "https://benthambooks.com/ebook-images/sample-files-images/9781681080345/9781681080345-1.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj0502071251rwau7g",
+        "image_path": "MMR/images/clo5072yj0502071251rwau7g.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"When they needed hope, he gave them Great Expectations. Fiction can be dangerous in times of war.\"",
+        "type": "ocr",
+        "url": "http://4.bp.blogspot.com/-l2sSEeDfM2k/VYLYfgimcfI/AAAAAAAASgc/x9DaVhmf0Tc/s1600/Mr.%2BPip.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly048z0712an8jqypp",
+        "image_path": "MMR/images/clo5072ly048z0712an8jqypp.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"SPECIAL EDITION Suzanne Collins READ BY TATIANA MASLANY\"",
+        "type": "ocr",
+        "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/6/2018/09/hf_audio.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03nv0712ot1htrnf",
+        "image_path": "MMR/images/clo5072ac03nv0712ot1htrnf.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"a shadow falls novel\"",
+        "type": "ocr",
+        "url": "http://www.netread.com/jcusers2/bk1388/890/9781250012890/image/lgcover.9781250012890.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50738805r70712yqoqz2n7",
+        "image_path": "MMR/images/clo50738805r70712yqoqz2n7.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"Magical Recipes Inspired by Harry Potter, Merlin, The Wizard of Oz, and More\"",
+        "type": "ocr",
+        "url": "https://postcardsfromlalaland.files.wordpress.com/2020/10/wizards-cookbook.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo507336058y0712yk79kfel",
+        "image_path": "MMR/images/clo507336058y0712yk79kfel.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"THE LONDON TOWN GARDEN\"",
+        "type": "ocr",
+        "url": "https://www.waldenbooks.co.uk/assets/images/product/39512.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ly040g07129k22ex65",
+        "image_path": "MMR/images/clo5072ly040g07129k22ex65.jpg",
+        "question": "What is the subtitle in the image?",
+        "answers": "\"AUTHOR YOUR BOOK ACTION PLAN WORKBOOK\"",
+        "type": "ocr",
+        "url": "https://cdn.shopify.com/s/files/1/0013/8284/2456/products/AUTHORYOURBOOK-deborahsnenlson-featured_e32a1fb4-86f8-408f-aa5d-444c8cffceaf_530x@2x.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03ro0712q2476wnt",
+        "image_path": "MMR/images/clo5072ac03ro0712q2476wnt.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"TEASE MONSTER\"",
+        "type": "ocr",
+        "url": "https://www.ebooks2go.com/cmsstatic/product/9781545721629.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo50733605gp0712k2ajrrac",
+        "image_path": "MMR/images/clo50733605gp0712k2ajrrac.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"INDIA UNDER BRITISH RULE\"",
+        "type": "ocr",
+        "url": "https://www.litres.ru/static/bookimages/40/62/93/40629388.bin.dir/40629388.cover.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072yj054r0712aq16k3y6",
+        "image_path": "MMR/images/clo5072yj054r0712aq16k3y6.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"The Little Stranger\"",
+        "type": "ocr",
+        "url": "https://www.cinema-eden.com/docs/uploads/2018/11/qm1KJU9coK2voDIFD6AUvSgVG56.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03p907129p5ngjjm",
+        "image_path": "MMR/images/clo5072ac03p907129p5ngjjm.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"Two Years on Trek",
+        "type": "ocr",
+        "url": "https://cv5.litres.ru/pub/c/cover/24619453.jpg"
+    },
+    {
+        "dataset_name": "ocr.json",
+        "id": "clo5072ac03o307128jge287g",
+        "image_path": "MMR/images/clo5072ac03o307128jge287g.jpg",
+        "question": "What is the title in the image?",
+        "answers": "\"ESCAPE THE ROOM MYSTERY AT THE STARGAZER'S MANOR\"",
+        "type": "ocr",
+        "url": "https://i0.wp.com/www.thinkfun.com/wp-content/uploads/2016/01/EscapStar-7351-HiResSpill2.jpg"
+    }
+]

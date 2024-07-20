@@ -1,0 +1,350 @@
+[
+    {
+        "img_id": "clo5072tz04h50712gth2lbqh",
+        "url": "https://spottsgardens.com/wp-content/uploads/2021/01/Spring-Containers-That-Handle-the-Cold-1520x2031.jpg",
+        "Question": "Question: Which text is larger in size in the image?\nChoices:\n1. \"SpottsGardens.com\"\n2. \"SPRING CONTAINERS\"\n3. \"That Handle the Cold\"\n4. All texts are of the same size.\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072tz04oo0712tf1j0dsp",
+        "url": "https://www.waldenbooks.co.uk/assets/images/product/39229.jpg",
+        "Question": "Question: Comparing the font size of the title and the authors' names on the book cover, which text is larger?\nChoices:\n1. The title \"Let Us Now Praise Famous Men\"\n2. The authors' names \"JAMES AGEE WALKER EVANS\"\n3. Both are the same size\n4. The font size cannot be determined from the image\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo50738805tj0712ir7a9fxx",
+        "url": "http://www.sonniss.com/wp-content/uploads/edd/2016/03/Sounds_of_Europe1.jpg",
+        "Question": "Question: How does the font size of the text \"Sounds of Europe 1 by Resonant\" compare to the font size of the text \"Busy Places\" in the image?\nChoices:\n1. The font size is larger for \"Sounds of Europe 1 by Resonant\".\n2. The font size is larger for \"Busy Places\".\n3. The font sizes are the same for both texts.\n4. There is no text in the image.\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072yj04sg07126uryl0mr",
+        "url": "https://cdn.shopify.com/s/files/1/2592/3384/products/9781781555880_2048x2048.jpg",
+        "Question": "Question: Which text is larger on the cover of the book \"The Sirdar and The Khalifa\"?\n\nChoices:\n1. The author's name, \"Mark Simner.\"\n2. The subheading \"Kitchener's Reconquest of Sudan, 1896-98.\"\n3. The title \"The Sirdar and The Khalifa.\"\n4. The size of the texts are the same.\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo5072ac03pu07128calgm4i",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/718o2Z6LdbL.jpg",
+        "Question": "Question: Which text has a larger font size on the cover of the journal?\n\nChoices:\n1. The name of the author, \"LINNEAN SOCIETY (LONDON)\"\n2. The picture description of the mountain\n3. The title of the journal, \"THE JOURNAL OF THE LINNEAN SOCIETY OF LONDON, VOLUME 7\"\n4. There is no text with different font sizes\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo50733605ec0712o35zstsi",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81UHb0kzJaL.jpg",
+        "Question": "Question: Comparing the font sizes, which text element on the book cover is larger?\nChoices:\n1. The word \"Book\"\n2. The author's name \"barbara delaney\"\n3. The book title \"the cloth. paper. scissors.\"\n4. The subtitle \"Techniques and Inspiration for Creating Mixed-Media Art\"\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo50738805rz0712ovmirqoh",
+        "url": "https://i1.wp.com/reviews.metaphorosis.com/wp-content/uploads/sites/14/2019/07/The-Lovers-Philip-Jose-Farmer.jpg",
+        "Question": "Question: In the image provided, which text is larger in font size, the author's name or the book title?\n\nChoices:\n1. The author's name.\n2. The book title.\n3. Both are the same size.\n4. Neither text is visible.\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072yj053a0712sqlh8qft",
+        "url": "https://images.hothotshirt.com/2020/10/All-women-are-created-equal-only-the-coolest-go-scuba-diving-poster-1.jpg",
+        "Question": "Question: Which text is larger in the image?\n\nChoices:\n1. \"hothotshirt.com\"\n2. \"ALL WOMEN ARE CREATED EQUAL\"\n3. \"ONLY THE COOLEST GO SCUBA DIVING\"\n4. The text size is the same for both \"ALL WOMEN ARE CREATED EQUAL\" and \"ONLY THE COOLEST GO SCUBA DIVING\"\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo50733605e1071258rqsc4j",
+        "url": "https://cdn.shopify.com/s/files/1/1915/0715/products/Jack_and_Beanstalk_front_Cover_ac7743fe-87f0-4b76-b1a7-c147f18ec7fb_1024x.jpg",
+        "Question": "Question: Which text is written in a larger font size on the illustrated cover for \"Jack and the Beanstalk\"?\n\nChoices:\n1. Peter Pan\n2. PETER FORSYTH PAN\n3. and the Beanstalk\n4. Jack\n\n",
+        "Answer": 4
+    },
+    {
+        "img_id": "clo50738805q90712j94325pw",
+        "url": "https://cdn.shopify.com/s/files/1/0662/8383/products/regdown-bigstamptwotoes_1360x1360.jpg",
+        "Question": "Question: Which text is in a smaller font on the book cover?\n\nChoices:\n1. \"Big-Stamp Two-Toes the Barefoot Giant\"\n2. \"Spring Tales of Tiptoes Lightly\"\n3. \"Reg Down\"\n4. The text is all the same size.\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo507336055o0712upl8df6s",
+        "url": "https://cdn.shopify.com/s/files/1/0392/4761/products/PP_Prof_Astro_Cat_1024x1024.png",
+        "Question": "Question: Comparing the font sizes on the book cover, which text is larger?\nChoices:\n1. The unreadable subtext at the bottom center.\n2. The text with the book title \"Professor Astro Cat's Atomic Adventure\".\n3. The text \"Atomic Adventure\" only.\n4. The text \"Professor Astro Cat's\" only.\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072tz04lm0712jskrl6fn",
+        "url": "https://secureservercdn.net/198.71.233.87/2b7.307.myftpupload.com/wp-content/uploads/2020/09/f81607a3cd537406cf0cf506c726bfe2824c5e584c9e9dc5e04e42436c820a79-1-scaled.jpg",
+        "Question": "Question: Which text is larger in font size on the book cover for \"Always Get Lost\"?\n\nChoices:\n1. The title \"ALWAYS GET LOST\"\n2. The author's name \"Angela Carson\"\n3. The phrase \"LIFE & TRAVEL ABROAD\"\n4. The font sizes are the same\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072ac03rp0712lef9g775",
+        "url": "http://p3.storage.canalblog.com/38/41/909882/114199313_o.jpg",
+        "Question": "Question: Which text is larger on the cover of the book \"The Mortal Instruments: Les Origines\"?\nChoices:\n1. \"Cassandra Clare\"\n2. \"The Mortal Instruments\"\n3. \"3. LA PRINCESSE M\u00c9CANIQUE\"\n4. \"PKJ\"\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072ly04740712g3idat74",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/b/l/blut/blut-square-1536.jpg",
+        "Question": "Question: Which text is written in a larger font on the cover of the book?\n\nChoices:\n1. KARIN FOSSUM\n2. THE FIRST INSPECTOR SEJER MYSTERY\n3. EVA'S EYE\n4. INSPECTOR SEJER\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo5072tz04ft0712tccjf06m",
+        "url": "https://creatorscorner2017.files.wordpress.com/2019/09/thorn_trees3.jpg",
+        "Question": "Question: Which text is larger on the book cover of \"Thorn Trees\"?\n\nChoices:\n1. \"WITCHCRAFT + POLITICS = MURDER.\"\n2. \"THORN TREES.\"\n3. The texts are the same size.\n4. There is no visible text on the cover.\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo507336056h0712xfltldzw",
+        "url": "https://cdn.shopify.com/s/files/1/0070/0566/7387/products/image_f7422c76-9881-49ea-8074-3bcc769183a0_530x@2x.jpg",
+        "Question": "Question: How does the font size of the word \"TARGET\" compare to the text in the abstract design on the book cover?\nChoices:\n1. It is smaller.\n2. It is larger.\n3. It is the same size.\n4. There is no other text to compare.\n",
+        "Answer": 4
+    },
+    {
+        "img_id": "clo5072yj050m0712ji7l8wew",
+        "url": "https://cdn.shoplightspeed.com/shops/635287/files/24084356/1600x2048x2/books-the-hunting-hillary-the-forty-year-campaign.jpg",
+        "Question": "Question: Which text on the book cover is larger?\nChoices:\n1. The main title \"The Hunting of Hillary\"\n2. The subtitle \"The forty-year campaign to destroy Hillary Clinton\"\n3. The author's name \"Michael D'Antonio\"\n4. The size of the fonts is the same for all texts\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072ac03xk0712uwyeapqc",
+        "url": "https://cdn.shoplightspeed.com/shops/622533/files/18990937/1600x2048x2/baker-publishing-group-bethany-faith-alone-the-eva.jpg",
+        "Question": "Question: Which text is written in a larger font on the book cover?\nChoices:\n1. The author's name \"R.C. Sproul\"\n2. The title \"FAITH ALONE\"\n3. The subtitle \"The Evangelical Doctrine of Justification\"\n4. The name of the publisher\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072ly043c0712k8hdm12q",
+        "url": "https://i.etsystatic.com/7275305/r/il/62b4e3/928999347/il_fullxfull.928999347_14xv.jpg",
+        "Question": "Question: Which text on the cover of the \"National Geographic\" magazine is larger in size?\nChoices:\n1. \"NATIONAL GEOGRAPHIC\"\n2. \"The Most Powerful Woman in the World\"\n3. \"EXPLORER\"\n4. \"Science of Taste | Leopards | New York\"\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo50738805ud0712qaa6yobz",
+        "url": "https://cdn.penguin.com.au/covers/original/9781784701475.jpg",
+        "Question": "Question: Which text is larger in font size on the cover of the book?\n\nChoices:\n1. \"JASON BURKE\"\n2. \"BESTSELLING AUTHOR OF AL-QAEDA AND THE 9/11 WARS\"\n3. \"THE NEW THREAT FROM ISLAMIC MILITANCY\"\n4. \"'THIS IS HISTORY WRITTEN DIRECTLY FROM THE FRONT LINE'\"\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo50738805tf0712mh23hy92",
+        "url": "https://cdn.shopify.com/s/files/1/0039/3003/0149/products/books-anne4comp_1_1024x1024.jpg",
+        "Question": "Question: Which text is larger in font size on the movie poster for \"Anne of Green Gables: A New Beginning\"?\n\nChoices:\n1. The names of the actors at the top of the poster\n2. The text \"Official Movie Companion\" at the bottom of the poster\n3. The movie title \"Anne of Green Gables\"\n4. The subtitle \"A NEW BEGINNING\"\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo507336055k0712pcg7yjbd",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/71JfLWHwC4L.jpg",
+        "Question": "Question: Which text is larger in font size on the packaging of the \"Alice Violin Strings\"?\n\nChoices:\n1. \"Alice\"\n2. \"Violin Strings\"\n3. \"Guangzhou Romance Musical Instruments Co., Ltd.\"\n4. \"A703\"\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072yj053e0712vlvhzlsq",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81Go46iqChL.jpg",
+        "Question": "Question: Which part of the text on the book cover is written in a larger font size? \n\nChoices:\n1. \"Awakening Our Spirituality through Cooking\"\n2. \"COOKING FOR THE LOVE OF THE WORLD\"\n3. \"ANNE-MARIE FRYER WIBOLTT\"\n4. \"Foreword by Robert Sardello\"\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072tz04or0712pswefcpi",
+        "url": "https://i.gr-assets.com/images/S/photo.goodreads.com/books/1437398347i/25667625.jpg",
+        "Question": "Question: Which text on the book cover image has a larger font size?\nChoices:\n1. \"HISTORICAL STUDIES IN EDUCATION\"\n2. \"SECONDARY SCHOOL EDUCATION IN IRELAND\"\n3. \"TOM O'DONOGHUE JUDITH HARFORD\"\n4. \"HISTORY, MEMORIES AND LIFE STORIES, 1922 - 1967\"\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072tz04g50712qxem21hk",
+        "url": "https://cdn.shopify.com/s/files/1/2421/8843/products/MVL_1_530x@2x.jpeg",
+        "Question": "Question: Which text is larger on the book cover of \"The Adirondack Kids #19: Phantom of the Talus Caves\"?\n\nChoices:\n1. The title \"Phantom of the Talus Caves\"\n2. The authors' names \"JUSTIN AND GARY VANRIPER\"\n3. The illustrator's credit \"Illustrated by Carol VanRiper\"\n4. The series title \"The Adirondack Kids #19\"\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072ly045n071291gmhcyp",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/b/b/bbe8/bbe8-square-1536.jpg",
+        "Question": "Question: Which text is larger in font size on the book cover, the author's name or the title of the book?\n\nChoices:\n1. The author's name is larger.\n2. The title of the book is larger.\n3. Both the author's name and the title are the same size.\n4. There is no text concerning the author's name or the title.\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072tz04k80712ymh2jh0e",
+        "url": "https://media.wwbw.com/is/image/MMGS7/Lift-Up-Your-Heads-O-Ye-Gates-Accompaniment-CD-Composed-by-Robert-W.-Parker/K10369000000000-00-1400x1400.jpg",
+        "Question": "Question: Which text on the music sheet cover is larger in font size?\nChoices:\n1. \"Robert W. Parker\"\n2. \"LIFT UP YOUR HEADS, O YE GATES\"\n3. \"SATB Choral Score with Accompaniment\"\n4. \"JH-1026\"\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072yj04zc071231rb87j3",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81DljX3xAJL.jpg",
+        "Question": "Question: In the movie poster for \"Big Wave,\" is the font size of the title larger or smaller than that of the tagline?\n\nChoices:\n1. Larger than the tagline\n2. Smaller than the tagline\n3. The same size as the tagline\n4. There is no tagline present\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072tz04jf07129x7ihbne",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/c/2/c2uq/c2uq-square-orig.jpg",
+        "Question": "Question: Which text has a larger font size on the cover of \"FORTY ACRES AND MAYBE A MULE\"?\n\nChoices:\n1. The author's name, HARRIETTE GILLEM ROBINET.\n2. The title, \"FORTY ACRES AND MAYBE A MULE\".\n3. The narrator's name, ANDREA JOHNSON.\n4. The phrase \"Recorded Books\".\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo50733605cj0712oa6zx8m7",
+        "url": "https://cdn0.rubylane.com/shops/joyland/3949.1L.jpg",
+        "Question": "Question: Comparing the text sizes on the book cover, which text is larger?\nChoices:\n1. The text at the top of the cover.\n2. The text at the bottom of the cover.\n3. Both texts are the same size.\n4. There is no text on the cover.\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072yj05560712v16zdih3",
+        "url": "https://d1qmdf3vop2l07.cloudfront.net/pro-tulip.cloudvent.net/hash-store/091b881587714b5049ef1d13431cd2a4.jpg",
+        "Question": "Question: Which text is larger on the book cover, the title of the book or the name of the author?\n\nChoices:\n1. The title of the book is larger.\n2. The name of the author is larger.\n3. Both the title and the name of the author are the same size.\n4. There is no text present on the book cover.\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo50733605am0712qdewphhg",
+        "url": "https://media.wwbw.com/is/image/MMGS7/If-There-Is-Brothers-Sing-On-Jonathan-Palant-Choral-Series-TBB-composed-by-Dominick-DiOrio/J60476000000000-00-1400x1400.jpg",
+        "Question": "Question: Which text on the cover has a larger font size?\nChoices:\n1. \"IF THERE IS\"\n2. \"Dominick DiOrio\"\n3. \"BROTHERS SING ON!\"\n4. \"JONATHAN PALANT CHORAL SERIES\"\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo50738805rc0712l27nzin1",
+        "url": "https://images-na.ssl-images-amazon.com/images/I/81p6iZ8hQvL._SL1500_.jpg",
+        "Question": "Question: Which text on the DVD cover is larger, the series title at the top or the label at the bottom right corner?\n\nChoices:\n1. The series title at the top\n2. The label at the bottom right corner\n3. They are both the same size\n4. It is not possible to determine the font size from the image\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072ly04300712nl8e84wp",
+        "url": "https://www.kristenwalker.net/blog/wp-content/uploads/2020/02/Blog-Banners-Templates-2.jpg",
+        "Question": "Question: Which text is larger in font size, the title of the book on the cover or the phrase \"Fantasy Friday\" in the review section?\n\nChoices:\n1. The title of the book, \"A WITCH CALLED RED\"\n2. The phrase \"Fantasy Friday\"\n3. They are the same size\n4. Neither text is visible\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072ly04130712br2tam5m",
+        "url": "https://media.universcine.com/84/da/84da8075-2485-11e5-a852-01c9778a8a4f.jpg",
+        "Question": "Question: Which text is larger on the book cover, the title \"IDIOTS & ANGELS\" or the website address \"www.idiotsandangels.com\"?\n\nChoices:\n1. The title \"IDIOTS & ANGELS\" is larger.\n2. The website address \"www.idiotsandangels.com\" is larger.\n3. Both are the same size.\n4. The text size cannot be determined from the image.\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072tz04pn07125m9o6udx",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/a/g/ag1y/ag1y-square-1536.jpg",
+        "Question": "Question: Which text on the book cover is larger, the title \"SEAL OF GOD\" or the author's name \"CHAD WILLIAMS\"?\n\nChoices:\n1. The title \"SEAL OF GOD\" is larger.\n2. The author's name \"CHAD WILLIAMS\" is larger.\n3. Both the title and the author's name are the same size.\n4. The size of the text cannot be determined from the image.\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072ac03yf0712j5tbv93c",
+        "url": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501151798/the-woman-in-cabin-10-9781501151798_hr.jpg",
+        "Question": "Question: Which text is larger on the book cover of \"The Woman in Cabin 10\"?\n\nChoices:\n1. \"RUTH WARE\"\n2. \"a novel\"\n3. \"THE WOMAN IN CABIN 10\"\n4. \"Internationally bestselling author of In a Dark, Dark Wood\"\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo5072yj052b07128v6mojpp",
+        "url": "https://cdn.shoplightspeed.com/shops/614055/files/24896011/sally-deng-skyward-book-sally-deng.jpg",
+        "Question": "Question: Comparing the font sizes, which text on the book cover is larger?\n\nChoices:\n1. \"SALLY DENG\"\n2. \"THE STORY OF FEMALE PILOTS IN WWII\"\n3. \"SKYWARD\"\n4. \"FLYING EYE BOOKS\"\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo5072ac03o70712b4x0luln",
+        "url": "https://www.dsao.ca/wp-content/uploads/2020/12/129411618_3940024012696342_3924004127219922529_o.jpg",
+        "Question": "Question: Which text is displayed in a larger font size on the cover of \"My Hero Brother\"?\n\nChoices:\n1. The director's name, Yonatan Nir.\n2. The title of the theme song, \"It's time to go.\"\n3. The name of the cinematographer, Yoav Kleinman.\n4. The film's title, \"MY HERO BROTHER.\"\n\n",
+        "Answer": 4
+    },
+    {
+        "img_id": "clo50733605930712y7xey142",
+        "url": "https://m.media-amazon.com/images/I/71p6yHsGsTL.jpg",
+        "Question": "Question: Which text on the cover of the book \"On Creativity\" has a larger font size?\n\nChoices:\n1. \"HBR's 10 MUST READS\"\n2. \"BONUS ARTICLE 'How Pixar Fosters Collective Creativity'\"\n3. \"On Creativity\"\n4. \"If you read nothing else on creativity, read these definitive articles from Harvard Business Review.\"\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo50733605j30712q86xx22j",
+        "url": "https://mystichouse.vn/wp-content/uploads/2020/04/Steampunk-Tarot-Mini-9780738765648-1.jpg",
+        "Question": "Question: In the image, whose font size is larger, \"BARBARA MOORE\" or \"MINI\"?\nChoices:\n1. \"BARBARA MOORE\"\n2. \"MINI\"\n3. Both have the same font size.\n4. Neither text is visible.\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072tz04hs0712itm0ysh8",
+        "url": "https://images.squarespace-cdn.com/content/v1/5c64720734c4e284e235d62e/1552420624391-8NYRIRY5WJL1SBQ5L03H/ke17ZwdGBToddI8pDm48kPcERWKYySUBmLD3loYuorx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UYMjmSf4wLcpS4oqmuFdz9ZX_vTgnAksbSTM5Eva8T3KuWcPLFtnvN-Wy7FWDJKpPw/cover_paranormal.jpg",
+        "Question": "Question: Which text is larger, the title of the book or the subtitle listed under \"HOW TO\"?\n\nChoices:\n1. The title of the book is larger.\n2. The subtitle listed under \"HOW TO\" is larger.\n3. Both the title and the subtitle have the same font size.\n4. None of the text is visible.\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072ac03np0712lkczg2jz",
+        "url": "https://images.tandf.co.uk/common/jackets/agentjpg/978036722/9780367228576.jpg",
+        "Question": "Question: Which text on the book cover has a larger font size?\n\nChoices:\n1. \"Routledge Research on African Education\"\n2. \"EARLY CHILDHOOD DEVELOPMENT IN HUMANITARIAN CRISES\"\n3. \"SOUTH SUDANESE REFUGEES IN UGANDA\"\n4. \"Sweta Shah\"\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072tz04nk0712tmedcvpb",
+        "url": "https://venngage-wordpress-gallery.s3.amazonaws.com/uploads/2018/10/Unique-Summer-Camp-Marketing-Flyer-Example5.jpg",
+        "Question": "Question: Which text on the poster is in a larger font size?\nChoices:\n1. The application dates for the camp.\n2. The Korean text inviting children to the camp.\n3. The title \"SUMMER CHILD CAMP\".\n4. The dates the camp will be held.\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo5072tz04o707121p3u7zhg",
+        "url": "http://www.awardsdaily.com/FYC/2014/theory2_big.jpg",
+        "Question": "Question: Which text is larger on the book cover image?\n\nChoices:\n1. \"Consider EVERYTHING\"\n2. \"the THEORY of EVERYTHING\"\n3. \"FOCUS WORKING TITLE\"\n4. \"For more on this extraordinary film, go to www.FocusGuilds2014.com\"\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo50733605gz0712wod2vy6m",
+        "url": "https://cv3.litres.ru/pub/c/cover/24170332.jpg",
+        "Question": "Question: In the image, how does the font size of the author's name compare to the font size of the book title?\n\nChoices:\n1. The font size of the author's name is larger than the book title.\n2. The font size of the book title is larger than the author's name.\n3. The font size of the author's name and the book title are the same.\n4. There is no text present to compare font sizes.\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo50738805t90712g91q8rcl",
+        "url": "https://immersiveartexperience.files.wordpress.com/2019/11/the-fake-factory-magritte-art-experience_00381.jpg",
+        "Question": "Question: Which text is larger on the advertisement poster for the \"Inside Magritte Immersive Art Experience\"?\n\nChoices:\n1. \"SANTO STEFANO AL PONTE - FIRENZE FINO A FEBBRAIO 2020\"\n2. \"INSIDE MAGRITTE IMMERSIVE ART EXPERIENCE\"\n3. \"THE FAKE FACTORY IMMERSIVE ART EXPERIENCE\"\n4. The font size is the same for all texts.\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072ac03yj0712z2s9zx43",
+        "url": "https://d3525k1ryd2155.cloudfront.net/h/213/228/870228213.0.x.jpg",
+        "Question": "Question: Based on the image provided, which text has the larger font size on this book cover?\n\nChoices:\n1. \"ALAN SILLITOE\"\n2. \"The Loneliness of The LONG- distance Runner\"\n3. \"By the Author of SATURDAY NIGHT AND SUNDAY MORNING\"\n4. \"The Loneliness of The TonG-\"\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072ac03o20712f0b7w3ni",
+        "url": "https://delcampe-static.net/img_large/auction/000/833/522/864_001.jpg",
+        "Question": "Question: Which text is larger in font size on the cover for the commemorative presentation of \"The Hunchback of Notre Dame\"?\n\nChoices:\n1. \"Celebrating the release of Walt Disney Pictures' new full feature animation\"\n2. \"The Hunchback of Notre Dame\"\n3. \"Commemorative PhoneCard Presentation\"\n4. \"OFFICIAL ISSUE Number\"\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072tz04jc0712banhu57j",
+        "url": "https://images.tandf.co.uk/common/jackets/agentjpg/978086078/9780860789437.jpg",
+        "Question": "Question: Which text is printed in a larger font size on the book cover?\n\nChoices:\n1. Vern L. Bullough\n2. UNIVERSITIES, MEDICINE AND SCIENCE IN THE MEDIEVAL WEST\n3. VARIORUM COLLECTED STUDIES SERIES\n4. An Ashgate Book\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072yj050o0712tym2d5pq",
+        "url": "https://lynnestjames.com/wp-content/uploads/2021/05/HARMONY-scaled.jpg",
+        "Question": "Question: Which text is larger on the book cover, the author's name or the series name?\n\nChoices:\n1. The author's name\n2. The series name\n3. Both are the same size\n4. The title of the book\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo5072tz04n20712fvh2tya4",
+        "url": "https://redhen.org/wp-content/uploads/2021/06/City-Life-CVR-300dpi-RGB-aerio-scaled.jpg",
+        "Question": "Question: Which text is larger on the cover of the book \"City Life: Poems\"?\nChoices:\n1. FREDERICK FEIRSTEIN\n2. CITY LIFE\n3. POEMS\n4. A Story Line Press Legacy Title\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072yj054r0712aq16k3y6",
+        "url": "https://www.cinema-eden.com/docs/uploads/2018/11/qm1KJU9coK2voDIFD6AUvSgVG56.jpg",
+        "Question": "Question: Which text is larger on the book cover of \"The Little Stranger\"?\n\nChoices:\n1. \"D'apr\u00e8s Le Best-seller De Sarah Waters\"\n2. \"The Little Stranger\"\n3. The text size is the same for both.\n4. There is no text on the cover.\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072ly042b07121wmq7hg4",
+        "url": "https://cdn.shopify.com/s/files/1/1137/5692/products/SKU-108049-Inaugural-Addresses-of-the-Presidents-Volume-1-1_1024x1024.jpg",
+        "Question": "Question: Which text is written in a larger font size on the book cover?\n\nChoices:\n1. The list of U.S. presidents' names.\n2. The subtitle \"of the Presidents of the United States.\"\n3. The title \"Inaugural Addresses.\"\n4. The word \"Sterling\" at the bottom of the cover.\n\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo5072ac03vu0712jges7l49",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/9/2/9298/9298-square-1536.jpg",
+        "Question": "Question: Which text is larger, the book title or the author's name on this book cover?\n\nChoices:\n1. The book title\n2. The author's name\n3. Both are of the same size\n4. The subtext at the bottom\n\n",
+        "Answer": 1
+    },
+    {
+        "img_id": "clo50733605d10712ltj22lm0",
+        "url": "https://cdn.shoplightspeed.com/shops/633335/files/20675357/1600x2048x1/larry-gets-lost-in-texas.jpg",
+        "Question": "Question: When comparing the font size of \"Larry Gets Lost\" with \"in Texas\" on the book cover, which one is larger?\n\nChoices:\n1. \"Larry Gets Lost\" is larger.\n2. \"in Texas\" is larger.\n3. Both have the same font size.\n4. The font size cannot be determined from the image.\n\n",
+        "Answer": 2
+    },
+    {
+        "img_id": "clo5072tz04ec071245d96qmw",
+        "url": "https://s3-us-west-2.amazonaws.com/tabs.web.media/b/h/bh3q/bh3q-square-1536.jpg",
+        "Question": "Question: Which text is larger on the audiobook cover?\nChoices:\n1. \"A NOVELLA AND STORIES\"\n2. \"AWARD-WINNING WRITER/PRODUCER OF THE WIRE\"\n3. \"THE MARTINI SHOT\"\n4. \"READ BY DION GRAHAM\"\n",
+        "Answer": 3
+    },
+    {
+        "img_id": "clo5072ac03vh0712l0goncga",
+        "url": "https://cdn.shopify.com/s/files/1/2502/8340/products/2920_580x@2x.jpg",
+        "Question": "Question: How does the font size of the word \"Cookbook\" compare to the font size of \"the Happy Camper\" on the cover of the book?\n\nChoices:\n1. It is larger than the font size of \"the Happy Camper\".\n2. It is the same size as the font size of \"the Happy Camper\".\n3. It is smaller than the font size of \"the Happy Camper\".\n4. The word \"Cookbook\" is not visible on the cover.\n\n",
+        "Answer": 3
+    }
+]
