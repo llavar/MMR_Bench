@@ -19,12 +19,16 @@ Then, do pip install
 pip install -r requirements.txt
 ```
 
-## Run test script 
+## Run inference using reported models 
 The `inference.py` takes `model` and `task` flags. Run the python script to test selected model on specific task or use `all` to test on all tasks.
 ```
 CUDA_VISIBLE_DEVICES=0 python inference.py --model LLaVA-NEXT --task all
 ```
 
+## Run inference using a new model
+The `inference_customize.py` give a demo for defining your own model handler. Complete `load_model` and `ask` functions to run your own model.
+
+## task and model list
 Check the help metadata for a full list of options. 
 ```
 usage: inference.py [-h] [--task TASK] [--model MODEL] [--device DEVICE]
