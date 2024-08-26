@@ -11,7 +11,7 @@ MMR_data = load_dataset('puar-playground/MMR', split='test')
 ## Installation
 Create a conda venv
 ```
-conda create -n mmr -python=3.9
+conda create -n mmr -python=3.10
 conda activate mmr
 ```
 Then, do pip install
