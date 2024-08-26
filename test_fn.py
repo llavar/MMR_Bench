@@ -51,7 +51,6 @@ def init_handler(model_name):
     return handler
 
 
-
 def test_mcq(task, qa_data, model_name, handler, result_dir=None):
     
     results = []
