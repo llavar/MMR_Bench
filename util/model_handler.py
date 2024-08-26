@@ -76,8 +76,6 @@ class BaseModelHandler:
             elif question_type == 'mcq':
                 # reply = int(reply.replace('\"', '').strip())
                 numbers = re.findall(r'\d+', reply)
-                # Convert the list of numbers from strings to integers
-                numbers = [int(number) for number in numbers]
 
                 if len(numbers) > 0:
                     return numbers[0]
