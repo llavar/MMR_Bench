@@ -19,11 +19,11 @@ class MyHandler(BaseModelHandler):
         self.load_model()
 
     def load_model(self):
-        from transformers import AutoModelForCausalLM 
-        from transformers import AutoProcessor 
-        model_id = "usr_name/SOTA_model"
-        self.model = AutoModelForCausalLM.from_pretrained(model_id, device_map="cuda", trust_remote_code=True, torch_dtype="auto")
-        self.processor = AutoProcessor.from_pretrained(model_id, trust_remote_code=True)
+        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        # # load your model
+        self.model = your_model()
+        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        
 
     def ask(self, input_string: str, img_dir: str, question_type: str):
         
@@ -33,12 +33,9 @@ class MyHandler(BaseModelHandler):
         image = self.load_img(img_dir)
 
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         # # Do your magic to generate text response
         # prompt = some_prompt + question_prompt
         # response = self.model(image, prompt)
-
-        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         model_answer = model_answer.replace('\"', '').strip()
