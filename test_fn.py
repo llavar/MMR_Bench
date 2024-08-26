@@ -120,6 +120,7 @@ def test_grounding_o(task, qa_data, model_name, handler, result_dir=None):
 
     results = []
     iou_list = []
+    score = 0
     pbar = tqdm(enumerate(qa_data), desc='grounding_o', total=len(qa_data), ncols=120)
     for i, q in pbar:
         img_id = q['img_id']
@@ -144,6 +145,7 @@ def test_grounding_o(task, qa_data, model_name, handler, result_dir=None):
         iou_s = compute_iou(true_box, model_answer)
         iou_list.append(iou_s)
 
+        
         score = sum([1 for x in iou_list if x > 0.3])
         
         pbar.set_postfix({'score': score})
@@ -159,6 +161,8 @@ def test_grounding_t(task, qa_data, model_name, handler, result_dir=None):
     results = []
     iou_list = []
     pnls_list = []
+    score_pnls = 0
+    score_iou = 0
     pbar = tqdm(enumerate(qa_data), desc='grounding_t', total=len(qa_data), ncols=120)
     for i, q in pbar:
         img_id = q['img_id']
