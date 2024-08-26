@@ -26,7 +26,7 @@ CUDA_VISIBLE_DEVICES=0 python inference.py --model LLaVA-NEXT --task all
 ```
 
 ## Run inference using a new model
-The [`inference_customize.py`](https://github.com/llavar/MMR_Bench/blob/main/inference_customize.py) give a demo for defining your own model handler. Modify the `load_model` and `ask` functions to run your own model.
+The [`inference_customize.py`](https://github.com/llavar/MMR_Bench/blob/977e60eb3d2735efcc810462940acc839e6ccdeb/inference_customize.py#L21C5-L44C28) give a demo for defining your own model handler. Modify the `load_model` and `ask` functions to run your own model.
 
 ## task and model list
 Check the help metadata for a full list of options. 
