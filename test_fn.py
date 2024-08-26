@@ -118,10 +118,10 @@ def test_grounding_o(task, qa_data, model_name, handler, result_dir=None):
     pbar = tqdm(enumerate(qa_data), desc='grounding_o', total=len(qa_data), ncols=120)
     for i, q in pbar:
         img_id = q['img_id']
-        true_box = q['Answer']
+        true_box = json.loads(q['Answer'])
         img_dir = f'./img/{img_id}.jpg'
         
-        question = json.loads(q['Question'])
+        question = q['Question']
 
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         # model specific code block
