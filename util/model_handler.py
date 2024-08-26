@@ -34,13 +34,12 @@ class BaseModelHandler:
 
     def prompt_wrapper(self, input_string, question_type):
         templates = {
-            'grounding_o': (f'where is the {input_string} in the image?\n'
-                            f'Please write the position as a bounding box, '
+            'grounding_o': (f'{input_string}\nPlease write the position as a bounding box, '
                             f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
                             f'Output the text only.'),
             'grounding_t': (f'{input_string}\nPlease write the position as a bounding box, '
                             f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
-                            f'Output the text and bounding box only. For example, "Hello world" [x_min, y_min, x_max, y_max]'),
+                            f'Output the text and bounding box only. For example, "Hello world", [x_min, y_min, x_max, y_max]'),
         
             'mcq': (f'{input_string}\nOnly print the index of the correct choice as answer, such as 1, 2, 3, or 4'),
             'recognition_t': (f'{input_string}\nOnly print the text; do not include any other descriptions.')
@@ -48,15 +47,17 @@ class BaseModelHandler:
 
         return templates.get(question_type, input_string)
         
-    def load_img(self, img_dir):
-        if img_dir.startswith('http://') or img_dir.startswith('https://'):
-            response = requests.get(img_dir)
+    def load_img(self, img_input):
+        if img_input.startswith('http://') or img_input.startswith('https://'):
+            # Handle URL
+            response = requests.get(img_input)
             image = Image.open(BytesIO(response.content)).convert('RGB')
         else:
-            image = Image.open(img_dir).convert('RGB')
+            # Handle local file path
+            image = Image.open(img_input).convert('RGB')
 
         return image
-    
+        
     def auto_extract(self, question_type, reply):
         try:
             if question_type == 'grounding_o':
@@ -120,7 +121,7 @@ class GPT4Handler(BaseModelHandler):
                 'the coordinates are in float numbers on a scale from 0 to 1, '
                 'the list consists of the four coordinates: [x_min, y_min, x_max, y_max]. '
                 'Please just write the list without any explanations. A demo reply is:\n'
-                '"Hello world" [0.19, 0.32, 0.85, 0.76]'
+                '"Hello world", [0.19, 0.32, 0.85, 0.76]'
             ),
             "mcq": (
                 'You are an expert AI model in analyzing images. Please choose the correct answer.'
@@ -137,6 +138,60 @@ class GPT4Handler(BaseModelHandler):
         elif model_name == 'GPT-4V':
             from util.gpt4v import request_gpt4v
             self.ask_gpt = request_gpt4v
+
+
+    def ask(self, input_string: str, img_dir: str, question_type: str):
+        sys_prompt = self.system_prompts[question_type]
+        prompt = self.prompt_wrapper(input_string=input_string, question_type=question_type)
+
+        model_answer = self.ask_gpt(prompt=prompt, image_path_list=[img_dir], 
+                              system_prompt=sys_prompt)
+        
+        model_answer = self.auto_extract(question_type, model_answer)
+        
+        return model_answer
+    
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Handler for Claude 3.5 Sonnet
+
+class ClaudeHandler(BaseModelHandler):
+    def __init__(self, model_name: str):
+        super().__init__(model_name)
+
+        assert model_name == 'Claude-3.5-Sonnet'
+
+        self.load_model(model_name)
+
+        self.system_prompts = {
+            "grounding_o": (
+                'You are an expert AI model in detecting objects in images. '
+                'Please write the bounding box of the object as a python list, '
+                'the coordinates are in float numbers on a scale from 0 to 1, '
+                'the list consists of the four coordinates: [x_min, y_min, x_max, y_max]. '
+                'Please just write the list without any explanations. A demo reply is:\n'
+                '[607.99, 629.82, 924.85, 762.85]'
+            ),
+            "grounding_t": (
+                'You are an expert in detecting objects in images. '
+                'Please extract the text and its bounding box as a python list, '
+                'the coordinates are in float numbers on a scale from 0 to 1, '
+                'the list consists of the four coordinates: [x_min, y_min, x_max, y_max]. '
+                'Please just write the list without any explanations. A demo reply is:\n'
+                '"Hello world", [0.19, 0.32, 0.85, 0.76]'
+            ),
+            "mcq": (
+                'You are an expert AI model in analyzing images. Please choose the correct answer.'
+            ),
+            "recognition_t": (
+                'You are an expert AI model in reading text in images. Please extract the required text.'
+            )
+        }
+
+    def load_model(self, model_name: str):
+        from util.claude import request_claude
+        self.ask_gpt = request_claude
 
 
     def ask(self, input_string: str, img_dir: str, question_type: str):
@@ -237,13 +292,13 @@ class QwenHandler(BaseModelHandler):
             # for qwen-vl-plus
             question = (f'{input_string} Provide me with the x_min, y_min, x_max and y_max coordinate '
                         f'in range of 0 to 1 as a python list. '
-                        f'Please output the text first and then the list in the format of: text [x1, y1, x2, y2]')
+                        f'Please output the text first and then the list in the format of: text, [x1, y1, x2, y2]')
 
         elif question_type == 'grounding_t' and self.model_name == 'Qwen-vl-max':
             # for qwen-vl-max
             question = (f'{input_string} Provide me with the x_min, y_min, x_max and y_max coordinate '
                         f'in range of 0 to 1 as a python list. '
-                        f'Please output both the text and the list. An example is: "text text" [x1, y1, x2, y2]')
+                        f'Please output both the text and the list. An example is: "text text", [x1, y1, x2, y2]')
     
             
         elif question_type == 'single_choice':
@@ -432,7 +487,7 @@ class LLaVANext34BHandler(BaseModelHandler):
                             f'Output the text only.'),
             'grounding_t': (f'{input_string}\nPlease write the position as a bounding box, '
                             f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
-                            f'Output the text first and then the bounding box. For example, "Hello world" [x_min, y_min, x_max, y_max]'),
+                            f'Output the text first and then the bounding box. For example, "Hello world", [x_min, y_min, x_max, y_max]'),
         
             'mcq': (f'{input_string}\nOnly print the index of the correct choice as answer, such as 1, 2, 3, or 4'),
             'recognition_t': (f'{input_string}\nOnly print the text; do not include any other descriptions.')
@@ -551,7 +606,7 @@ class IdeficsHandler(BaseModelHandler):
                             f'Output the text only.'),
             'grounding_t': (f'{input_string}\nPlease write the position as a bounding box, '
                             f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
-                            f'Output the text and bounding box only. For example, "Hello world" [x_min, y_min, x_max, y_max]'),
+                            f'Output the text and bounding box only. For example, "Hello world", [x_min, y_min, x_max, y_max]'),
         
             'mcq': (f'{input_string}\nOnly print the index of the correct choice as answer, such as 1, 2, 3, or 4. Do not output additional description.'),
             'recognition_t': (f'{input_string}\nOnly print the text; do not include any other descriptions.')
@@ -614,7 +669,7 @@ class Idefics2Handler(BaseModelHandler):
                             f'Output the text only.'),
             'grounding_t': (f'{input_string}\nPlease write the position as a bounding box, '
                             f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
-                            f'Output the text and bounding box only. For example, "Hello world" [x_min, y_min, x_max, y_max]'),
+                            f'Output the text and bounding box only. For example, "Hello world", [x_min, y_min, x_max, y_max]'),
         
             'mcq': (f'{input_string}\nOnly print the index of the correct choice as answer, such as 1, 2, 3, or 4. Do not output additional description.'),
             'recognition_t': (f'{input_string}\nOnly print the text; do not include any other descriptions.')

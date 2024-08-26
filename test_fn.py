@@ -26,6 +26,7 @@ question_type_zoo = {'font_color': 'mcq',
 
 model_handler_zoo = {'GPT-4o': GPT4Handler, 
                      'GPT-4V': GPT4Handler, 
+                     'Claude-3.5-Sonnet': ClaudeHandler,
                      'Phi-3-Vision': Phi3VHandler,
                      'Qwen-vl-plus': QwenHandler,
                      'Qwen-vl-max': QwenHandler,
@@ -40,24 +41,21 @@ model_handler_zoo = {'GPT-4o': GPT4Handler,
                     }
 
 def init_handler(model_name):
-    handler_type = model_handler_zoo[model_name]
-    handler = handler_type(model_name=model_name)
+    handler_class = model_handler_zoo[model_name]
+    handler = handler_class(model_name=model_name)
     return handler
 
 
+
+def test_mcq(task, qa_data, model_name, handler, result_dir=None):
     
-def test_mcq(task, model_name, handler, result_dir=None):
-    
-    qa_dir = os.path.join('./QA/mcq', f'{task}.json')
-    question_lists = json.load(open(qa_dir, 'r'))
-    question_lists = question_lists[:50]
     results = []
-    n_correct = 0
-    pbar = tqdm(enumerate(question_lists), desc=f'task: {task}', total=len(question_lists), ncols=120)
+    score = 0
+    pbar = tqdm(enumerate(qa_data), desc=task, total=len(qa_data), ncols=120)
     for i, q in pbar:
         img_id = q['img_id']
         true_answer = q['Answer']
-        img_dir = f'./img/{img_id}.jpg'
+        img_dir = q['url']
         question = q['Question']
 
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -71,74 +69,64 @@ def test_mcq(task, model_name, handler, result_dir=None):
         q['model_answer'] = model_answer
         results.append(q)            
         
-        n_correct += (true_answer == model_answer)
-        pbar.set_postfix({'correct': n_correct, 'Answer': true_answer, 'Model': model_answer})
+        score += (true_answer == model_answer)
+        pbar.set_postfix({'score': score, 'Answer': true_answer, 'Model': model_answer})
     
     if result_dir is not None:
         json.dump(results, open(os.path.join(result_dir, f'{model_name}_{task}.json'), 'w'), indent=4)
 
-    return results
+    return score
 
 
-def test_recognition(task, model_name, handler, result_dir=None):
+def test_recognition(task, qa_data, model_name, handler, result_dir=None):
     
-    qa_dir = os.path.join('./QA/recognition', f'{task}.json')
-    question_lists = json.load(open(qa_dir, 'r'))
-    question_lists = question_lists[:50]
     results = []
     pnls_list = []
-    pbar = tqdm(enumerate(question_lists), desc=task, total=len(question_lists), ncols=120)
+    pbar = tqdm(enumerate(qa_data), desc=task, total=len(qa_data), ncols=120)
     for i, q in pbar:
-        img_id = q['id']
-        true_answer = q['answers']
+        img_id = q['img_id']
         img_dir = f'./img/{img_id}.jpg'
-        question = q['question']
+        question = q['Question']
 
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         # model specific code block
         # ----------------------------------------------------------------------------------------
         # get output from model
-        model_answer = handler.ask(input_string=question, img_dir=img_dir, question_type='recognition_t')
+        model_answer = handler.ask(input_string=question, img_dir=pixel_values, question_type='recognition_t')
         
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         q['model_answer'] = model_answer
 
         # compute PNLS
-        pnls = compute_PNLS(q['answers'].lower().replace('\"', ''), model_answer.lower())
+        pnls = compute_PNLS(q['Answer'].lower().replace('\"', ''), model_answer.lower())
         results.append(q)
         pnls_list.append(pnls)
-        pbar.set_postfix({'PNLS': pnls, 'mean PNLS': np.mean(pnls_list)})
-        
-    s = np.mean(pnls_list)
-    # print(f'mean PNLS: {s}')
-    print(pnls_list)
-    print(sum([1 for x in pnls_list if x > 0.9]))
+        score = sum([1 for x in pnls_list if x > 0.9])
+        pbar.set_postfix({'score': score})
+
 
     if result_dir is not None:
         json.dump(results, open(os.path.join(result_dir, f'{model_name}_{task}.json'), 'w'), indent=4)
-    return results
+    return score
 
 
-def test_grounding_o(task, model_name, handler, result_dir=None):
+def test_grounding_o(task, qa_data, model_name, handler, result_dir=None):
 
-    question_lists = json.load(open('./QA/grounding/grounding_o.json', 'r'))
-    question_lists = question_lists[:50]
-    
     results = []
     iou_list = []
-    pbar = tqdm(enumerate(question_lists), desc='grounding_o', total=len(question_lists), ncols=120)
+    pbar = tqdm(enumerate(qa_data), desc='grounding_o', total=len(qa_data), ncols=120)
     for i, q in pbar:
         img_id = q['img_id']
-        box, box_n = q['box']
-        img_dir = f'./img/{img_id}.jpg'
-        target_object = q['object']
+        true_box = q['Answer']
+        img_dir = q['url']
+        question = json.loads(q['Question'])
 
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         # model specific code block
         # ----------------------------------------------------------------------------------------
         # get output from model
-        model_answer = handler.ask(input_string=target_object, img_dir=img_dir, question_type='grounding_o')
+        model_answer = handler.ask(input_string=question, img_dir=img_dir, question_type='grounding_o')
         
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -147,37 +135,31 @@ def test_grounding_o(task, model_name, handler, result_dir=None):
             
         q['model_answer'] = model_answer
         results.append(q)
-        iou_s = compute_iou(box_n, model_answer)
+        iou_s = compute_iou(true_box, model_answer)
         iou_list.append(iou_s)
-        
-        pbar.set_postfix({'valid': len(iou_list), 'mean IoU': np.mean(iou_list)})
-        
-    # print(f'mean IoU score: {np.mean(s)}, len: {len(s)}')
 
-    print(iou_list)
-    print(sum([1 for x in iou_list if x > 0.3]))
+        score = sum([1 for x in iou_list if x > 0.3])
+        
+        pbar.set_postfix({'score': score})
     
     if result_dir is not None:
         json.dump(results, open(os.path.join(result_dir, f'{model_name}_{task}.json'), 'w'), indent=4)
-    return results
+
+    return score
 
 
-def test_grounding_t(task, model_name, handler, result_dir=None):
+def test_grounding_t(task, qa_data, model_name, handler, result_dir=None):
 
-    question_lists = json.load(open('./QA/grounding/grounding_t.json', 'r'))
-    question_lists = question_lists[:50]
-    
     results = []
     iou_list = []
     pnls_list = []
-    pbar = tqdm(enumerate(question_lists), desc='grounding_t', total=len(question_lists), ncols=120)
+    pbar = tqdm(enumerate(qa_data), desc='grounding_t', total=len(qa_data), ncols=120)
     for i, q in pbar:
         img_id = q['img_id']
-        box, box_n = q['box']
-        img_dir = f'./img/{img_id}.jpg'
-        target_object = q['target']
-        pos = q['pos']
-        question = q['question']
+        img_dir = q['url']
+        true_text, true_box = json.loads(q['Answer'])
+
+        question = q['Question']
         
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         # model specific code block
@@ -193,43 +175,45 @@ def test_grounding_t(task, model_name, handler, result_dir=None):
 
         q['model_answer'] = [text_a, box_a]
         results.append(q)
-        iou_s = compute_iou(box_n, box_a)
-        pnls = compute_PNLS(q['text'].lower().replace('\"', ''), text_a.lower())
+        iou_s = compute_iou(true_box, box_a)
+        pnls = compute_PNLS(true_text.lower().replace('\"', ''), text_a.lower())
 
         iou_list.append(iou_s)
         pnls_list.append(pnls)
-        
-        pbar.set_postfix({'valid': len(iou_list), 'mean IoU': np.mean(iou_list), 'mean PNLS': np.mean(pnls_list)})
 
-    print(iou_list)
-    print(pnls_list)
-    print(sum([1 for x in iou_list if x > 0.3]))
-    print(sum([1 for x in pnls_list if x > 0.9]))
+        score_pnls = sum([1 for x in pnls_list if x > 0.9])
+        score_iou = sum([1 for x in iou_list if x > 0.3])
+
+        pbar.set_postfix({'score_pnls': score_pnls, 'score_iou': score_iou})
         
+    score = score_pnls + score_iou
 
     if result_dir is not None:
         json.dump(results, open(os.path.join(result_dir, f'{model_name}_{task}.json'), 'w'), indent=4)
-    return results
+
+    return score
 
 
 
-def test(task, model_name, handler, result_dir=None):
+def test(task, qa_data, model_name, handler, result_dir=None, n_qa=50):
     
     q_type = question_type_zoo[task]
+    qa_data = qa_data[:n_qa]
 
     if q_type == 'recognition_t':
-        test_recognition(task, model_name, handler, result_dir=result_dir)
+        score = test_recognition(task, qa_data, model_name, handler, result_dir=result_dir)
 
     elif q_type == 'mcq':
-        test_mcq(task, model_name, handler, result_dir=result_dir)
+        score = test_mcq(task, qa_data, model_name, handler, result_dir=result_dir)
 
     elif q_type == 'grounding_o':
-        test_grounding_o(task, model_name, handler, result_dir=result_dir)
+        score = test_grounding_o(task, qa_data, model_name, handler, result_dir=result_dir)
 
     elif q_type == 'grounding_t':
-        test_grounding_t(task, model_name, handler, result_dir=result_dir)
+        score = test_grounding_t(task, qa_data, model_name, handler, result_dir=result_dir)
 
 
+    return score
 
 
 

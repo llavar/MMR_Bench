@@ -3,7 +3,10 @@ The evaluation code for the MMR: Multi-Modal Reading Benchmark.
 ![image](demo.png)
 
 ## Image Data 
-Image will be available on [`huggingface`](https://huggingface.co/datasets/puar-playground/MMR) soon.
+Images are available on [`huggingface`](https://huggingface.co/datasets/puar-playground/MMR), and can be loaded automatically.
+```
+MMR_data = load_dataset('puar-playground/MMR', split='test')
+```
 
 ## Installation
 Create a conda venv
