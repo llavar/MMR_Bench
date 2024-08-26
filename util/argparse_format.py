@@ -49,7 +49,7 @@ class SmartFormatter(argparse.HelpFormatter):
 
 parser = argparse.ArgumentParser(formatter_class=SmartFormatter)
 parser.add_argument("--task", default='font_color', help=f"Name of task to test, choose from following:\n{task_description}\n", type=str)
-parser.add_argument("--model", default='GPT-4V', help=f"Model to test, choose from:\n{model_zoo}\n", type=str)
+parser.add_argument("--model", default=None, help=f"Model to test, choose from:\n{model_zoo}\n", type=str)
 parser.add_argument("--result_dir", default=None, help="result_dir to save results", type=str)
 parser.add_argument("--device", default='cuda', help="Device to use (cuda/cpu), default is auto choice that prefer cuda if available", type=str)
 MMR_args = parser.parse_args()

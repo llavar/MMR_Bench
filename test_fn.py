@@ -55,7 +55,7 @@ def test_mcq(task, qa_data, model_name, handler, result_dir=None):
     for i, q in pbar:
         img_id = q['img_id']
         true_answer = q['Answer']
-        img_dir = q['url']
+        img_dir = f'./img/{img_id}.jpg'
         question = q['Question']
 
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -85,14 +85,14 @@ def test_recognition(task, qa_data, model_name, handler, result_dir=None):
     pbar = tqdm(enumerate(qa_data), desc=task, total=len(qa_data), ncols=120)
     for i, q in pbar:
         img_id = q['img_id']
-        img_dir = f'./img/{img_id}.jpg'
         question = q['Question']
+        img_dir = f'./img/{img_id}.jpg'
 
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         # model specific code block
         # ----------------------------------------------------------------------------------------
         # get output from model
-        model_answer = handler.ask(input_string=question, img_dir=pixel_values, question_type='recognition_t')
+        model_answer = handler.ask(input_string=question, img_dir=img_dir, question_type='recognition_t')
         
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -119,7 +119,8 @@ def test_grounding_o(task, qa_data, model_name, handler, result_dir=None):
     for i, q in pbar:
         img_id = q['img_id']
         true_box = q['Answer']
-        img_dir = q['url']
+        img_dir = f'./img/{img_id}.jpg'
+        
         question = json.loads(q['Question'])
 
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -156,7 +157,7 @@ def test_grounding_t(task, qa_data, model_name, handler, result_dir=None):
     pbar = tqdm(enumerate(qa_data), desc='grounding_t', total=len(qa_data), ncols=120)
     for i, q in pbar:
         img_id = q['img_id']
-        img_dir = q['url']
+        img_dir = f'./img/{img_id}.jpg'
         true_text, true_box = json.loads(q['Answer'])
 
         question = q['Question']

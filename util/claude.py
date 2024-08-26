@@ -5,13 +5,16 @@ import base64
 import requests
 from io import BytesIO
 from PIL import Image
-from util.API_KEYS import AzureOpenAI_claude_KEY, AzureOpenAI_claude_BASE_URL
 
 # Set the environment variable
-os.environ['OPENAI_API_KEY'] = AzureOpenAI_claude_KEY
-os.environ['OPENAI_BASE_URL'] = AzureOpenAI_claude_BASE_URL
+os.environ['OPENAI_API_KEY'] = "sk-BHVOYqkc__nwbwxN1eNApQ"
+os.environ['OPENAI_BASE_URL'] = "https://llm-proxy.dcai.corp.adobe.com/"
 
 client = OpenAI()
+
+lm_id = "bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0"
+
+
 
 def encode_image(image_file):
     if image_file.startswith('http://') or image_file.startswith('https://'):
@@ -68,7 +71,7 @@ def request_claude(prompt, image_path_list, system_prompt):
     input_msgs = prepare_prompt(prompt, image_path_list, system_prompt)
 
     response = client.chat.completions.create(
-            model="bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0",
+            model=lm_id,
             # messages=[
             #     # {"role": "user", "content": ""},
             #     {"role": "user",
