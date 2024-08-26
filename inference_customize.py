@@ -9,6 +9,7 @@ from datasets import load_dataset
 task_zoo = ['font_size', 'font_color', 'localize_o', 'localize_t', 'spatial_ot', 'spatial_oo', 'spatial_tt', 
             'recognition_label', 'recognition_pos', 'grounding_o', 'grounding_t',]
 
+
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Handler for new model

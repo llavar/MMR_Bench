@@ -38,6 +38,11 @@ model_handler_zoo = {'GPT-4o': GPT4Handler,
                      'idefics-2-8b': Idefics2Handler,
                      'chameleon-7b': Chameleon7BHandler,
                      'chameleon-30b': Chameleon7BHandler,
+                     'InternVL2-1B': InternVLHandler,
+                     'InternVL2-2B': InternVLHandler,
+                     'InternVL2-4B': InternVLHandler,
+                     'InternVL2-8B': InternVLHandler,
+                     'InternVL2-76B': InternVL76BHandler,
                     }
 
 def init_handler(model_name):
