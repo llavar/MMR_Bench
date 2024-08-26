@@ -281,7 +281,7 @@ class QwenHandler(BaseModelHandler):
     def prompt_wrapper(self, input_string, question_type):
 
         if question_type == 'grounding_o':
-            question = (f'{input_string}\nProvide me with the x_min, y_min, x_max and y_max coordinate '
+            question = (f'where is the {input_string} in the image?\nProvide me with the x_min, y_min, x_max and y_max coordinate '
                         f'in range of 0 to 1 as a python list. Please just output the list.')
     
     
@@ -346,46 +346,6 @@ class QwenHandler(BaseModelHandler):
             return 'unknown error'
 
 
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# Handler for PaliGemma
-
-class PaliGemmaHandler(BaseModelHandler):
-    def __init__(self, model_name: str):
-        super().__init__(model_name)
-
-        assert model_name == 'PaliGemma'
-
-        self.load_model()
-
-    def load_model(self):
-        from transformers import AutoProcessor, PaliGemmaForConditionalGeneration
-        from PIL import Image
-        from huggingface_hub import login
-        token = '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'
-        login(token)
-        
-        model_id = "google/paligemma-3b-mix-448"
-        self.model = PaliGemmaForConditionalGeneration.from_pretrained(model_id, device_map="cuda")
-        self.processor = AutoProcessor.from_pretrained(model_id)
-
-
-    def ask(self, input_string: str, img_dir: str, question_type: str):
-        # prepare prompt
-        prompt = self.prompt_wrapper(input_string=input_string, question_type=question_type)
-        
-        raw_image = self.load_img(img_dir)
-        inputs = self.processor(prompt, raw_image, return_tensors="pt").to('cuda')
-        output = self.model.generate(**inputs, max_new_tokens=4096)
-    
-        model_answer = self.processor.decode(output[0], skip_special_tokens=True)[len(prompt):]
-
-        model_answer = model_answer.replace('\"', '').strip()
-        model_answer = self.auto_extract(question_type, model_answer)
-        
-        return model_answer
-        
-
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -396,14 +356,13 @@ class InternVLHandler(BaseModelHandler):
     def __init__(self, model_name: str):
         super().__init__(model_name)
 
-        assert model_name == 'InternVL2-8B'
+        assert 'InternVL2' in model_name
 
         self.load_model()
 
     def load_model(self):
         from transformers import AutoModel, AutoTokenizer
-        path = f'OpenGVLab/InternVL2-8B'
-        # path = f'OpenGVLab/InternVL2-Llama3-76B'
+        path = f'OpenGVLab/{self.model_name}'
         self.model = AutoModel.from_pretrained(
             path,
             torch_dtype=torch.bfloat16,
@@ -418,7 +377,6 @@ class InternVLHandler(BaseModelHandler):
         # prepare prompt
         prompt = self.prompt_wrapper(input_string=input_string, question_type=question_type)
 
-        # multi-image multi-round conversation, combined images (多图多轮对话，拼接图像)
         generation_config = dict(max_new_tokens=1024, do_sample=False)
         image = load_image(img_dir, max_num=20).to(torch.bfloat16).cuda()
         pixel_values = torch.cat([image], dim=0)
@@ -506,6 +464,7 @@ class InternVL76BHandler(BaseModelHandler):
         model_answer = self.auto_extract(question_type, model_answer)
         
         return model_answer
+
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -600,20 +559,6 @@ class LLaVANextHandler(BaseModelHandler):
         self.model = LlavaNextForConditionalGeneration.from_pretrained("llava-hf/llava-v1.6-vicuna-13b-hf",
                                                                   torch_dtype=torch.float16, low_cpu_mem_usage=True).to("cuda")
 
-    def prompt_wrapper(self, input_string, question_type):
-        templates = {
-            'grounding_o': (f'{input_string}\nPlease write the position as a bounding box, '
-                            f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
-                            f'Output the text only.'),
-            'grounding_t': (f'{input_string}\nPlease write the position as a bounding box, '
-                            f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
-                            f'Output the text first and then the bounding box. For example, "Hello world" [x_min, y_min, x_max, y_max]'),
-        
-            'mcq': (f'{input_string}\nOnly print the index of the correct choice as answer, such as 1, 2, 3, or 4'),
-            'recognition_t': (f'{input_string}\nOnly print the text; do not include any other descriptions.')
-        }
-
-        return templates.get(question_type, input_string)
 
     def ask(self, input_string: str, img_dir: str, question_type: str):
         
@@ -656,7 +601,8 @@ class LLaVANext34BHandler(BaseModelHandler):
 
     def prompt_wrapper(self, input_string, question_type):
         templates = {
-            'grounding_o': (f'{input_string}\nPlease write the position as a bounding box, '
+            'grounding_o': (f'where is the {input_string} in the image?\n'
+                            f'Please write the position as a bounding box, '
                             f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
                             f'Output the text only.'),
             'grounding_t': (f'{input_string}\nPlease write the position as a bounding box, '
@@ -774,7 +720,7 @@ class IdeficsHandler(BaseModelHandler):
 
     def prompt_wrapper(self, input_string, question_type):
         templates = {
-            'grounding_o': (f'{input_string}\n'
+            'grounding_o': (f'where is the {input_string} in the image?\n'
                             f'Please write the position as a bounding box, '
                             f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
                             f'Output the text only.'),
@@ -837,7 +783,7 @@ class Idefics2Handler(BaseModelHandler):
 
     def prompt_wrapper(self, input_string, question_type):
         templates = {
-            'grounding_o': (f'{input_string}\n'
+            'grounding_o': (f'where is the {input_string} in the image?\n'
                             f'Please write the position as a bounding box, '
                             f'and output the [x_min, y_min, x_max, y_max] coordinates in float numbers in python list.\n'
                             f'Output the text only.'),

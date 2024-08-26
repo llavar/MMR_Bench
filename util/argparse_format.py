@@ -16,7 +16,8 @@ task_description = ('font_color:        MCQ of font color\n'
                    )
 
 model_zoo = ['GPT-4V', 'GPT-4o', 'Claude-3.5-Sonnet', 'Phi-3-Vision', 'Qwen-vl-plus', 'Qwen-vl-max', 'LLaVA-NEXT', 'LLaVA-NEXT-34B',
-              'LLaVA-1.5', 'Monkey', 'idefics-80b', 'idefics-2-8b', 'chameleon-7b', 'chameleon-30b']
+             'LLaVA-1.5', 'Monkey', 'idefics-80b', 'idefics-2-8b', 'chameleon-7b', 'chameleon-30b', 'InternVL2-1B', 'InternVL2-2B', 
+             'InternVL2-4B', 'InternVL2-8B', 'InternVL2-76B']
 
 
 class SmartFormatter(argparse.HelpFormatter):
