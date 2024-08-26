@@ -27,6 +27,41 @@ CUDA_VISIBLE_DEVICES=0 python inference.py --model LLaVA-NEXT --task all
 
 ## Run inference using a new model
 The `inference_customize.py` give a demo for defining your own model handler. Complete `load_model` and `ask` functions to run your own model.
+```
+class MyHandler(BaseModelHandler):
+    def __init__(self, model_name: str):
+        super().__init__(model_name)
+        self.load_model()
+
+    def load_model(self):
+        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        # # load your model
+        self.model = your_model()
+
+        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        
+
+    def ask(self, input_string: str, img_dir: str, question_type: str):
+        
+        # prepare prompt
+        question_prompt = self.prompt_wrapper(input_string=input_string, question_type=question_type)
+        # load image from dir
+        image = self.load_img(img_dir)
+
+        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        # # Do your magic to generate text response
+        # prompt = some_prompt + question_prompt
+        # response = self.model(image, prompt)
+
+        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        model_answer = model_answer.replace('\"', '').strip()
+        model_answer = self.auto_extract(question_type, model_answer)
+
+        return model_answer
+
+```
+
 
 ## task and model list
 Check the help metadata for a full list of options. 
