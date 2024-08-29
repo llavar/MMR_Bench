@@ -1,5 +1,5 @@
 # Evaluating Reading Ability of Large Multimodal Models
-The evaluation code for the MMR: Multi-Modal Reading Benchmark.
+The evaluation code for the [MMR: Multi-Modal Reading Benchmark](https://llavar.github.io/mmr/).
 ![image](demo.png)
 
 ## Image Data 
